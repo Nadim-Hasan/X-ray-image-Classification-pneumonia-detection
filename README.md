@@ -32,3 +32,54 @@ Prerequisites
 Python 3.6+
 
 Kaggle account and API credentials
+
+
+Project Structure:
+├── data/
+│   ├── chest_xray/
+│   │   ├── train/
+│   │   │   ├── NORMAL/
+│   │   │   └── PNEUMONIA/
+│   │   ├── test/
+│   │   │   ├── NORMAL/
+│   │   │   └── PNEUMONIA/
+│   │   └── val/
+│   │       ├── NORMAL/
+│   │       └── PNEUMONIA/
+├── models/
+├── src/
+│   ├── data_preprocessing.py
+│   ├── model_training.py
+│   └── prediction.py
+├── requirements.txt
+└── README.md
+
+
+
+Model Architecture
+The project uses a Convolutional Neural Network (CNN) with:
+
+Multiple convolutional layers with ReLU activation
+
+Max pooling layers
+
+Dropout for regularization
+
+Fully connected layers for classification
+
+Results
+The model achieves:
+
+Training accuracy: ~95%
+
+Validation accuracy: ~90%
+
+Test accuracy: ~85%
+
+License
+This project uses the Chest X-Ray Images dataset which is available under the CC BY 4.0 license.
+
+Acknowledgments
+Data provided by Paul Mooney on Kaggle
+
+Inspired by research in medical image analysis and deep learning
